@@ -1,7 +1,7 @@
 <h3 align="center">
 	<img src="./big_wave.svg" width="100" alt="big_wave"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Deep Oceanic Next Color Theme for <a href="https://starship.rs">Starship</a>
+	<a href="https://github.com/spearkkk/deep-oceanic-next">Deep Oceanic Next</a> Color Theme for <a href="https://starship.rs">Starship</a>
 </h3>
 <p align="center">
 	<a href="https://github.com/spearkkk/deep-oceanic-next-starship/stargazers">
@@ -18,7 +18,7 @@
 ### How to Get This Nice Theme to My Machine?
 ```shell
    mkdir -p ~/.config && curl -o ~/.config/starship.toml \
-   https://raw.githubusercontent.com/spearkkk/deep-oceanic-next-starship/main/starship.toml
+   https://github.com/spearkkk/deep-oceanic-next-starship/blob/master/starship.toml
 ```
 Please back-up your `starship.toml` file before applying
 
