@@ -11,6 +11,12 @@
 ![deep-oceanic-next-starship_01.png](./deep-oceanic-next-starship_01.png)
 ![deep-oceanic-next-starship_02.png](./deep-oceanic-next-starship_02.png)
 
+### No OS Symbol, No Language, Docker, Package Version
+I created this theme with simplicity. There are many os, language, docker, package things.  
+I just remove this things to make thie theme prettier.  
+Feel free to customize this theme as you want.  
+Just look the cute duck 󰇥
+
 ### How to Get This Nice Theme to My Machine?
 ```shell
    mkdir -p ~/.config && curl -o ~/.config/starship.toml \
