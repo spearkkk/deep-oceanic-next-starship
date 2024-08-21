@@ -1,0 +1,115 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](fg:#0f1f26 bg:#013640)\
+[](fg:#013640 bg:#025060)\
+[](fg:#025060 bg:#036f8a)\
+[](fg:#036f8a bg:#001a1f)\
+[](fg:#001a1f bg:#ec5f67)\
+$username\
+[](fg:#ec5f67 bg:#fac863)\
+$battery\
+[](fg:#fac863 bg:#99c794)\
+$directory\
+[](fg:#99c794 bg:#5fb3b3)\
+$git_branch\
+$git_status\
+[](fg:#5fb3b3 bg:#b26cff)\
+$cmd_duration\
+[](fg:#b26cff bg:#ff99cc)\
+[](fg:#ff99cc bg:#001a1f)\
+$fill\
+[---](fg:#fac863 bg:#0f1f26)
+$character\
+"""
+
+right_format = """
+[󰇥](bold fg:#fac863 bg:#001a1f )
+"""
+
+# Deep Oceanic Next Colors
+# base00 = "#001a1f"
+# base01 = "#0f1f26"
+# base02 = "#013640"
+# base03 = "#025060"
+# base04 = "#036f8a"
+# base05 = "#e6ebf0"
+# base06 = "#f0f5f5"
+# base07 = "#f8fbfb"
+# base08 = "#ec5f67"
+# base09 = "#f99157"
+# base0A = "#fac863"
+# base0B = "#99c794"
+# base0C = "#5fb3b3"
+# base0D = "#4da6ff"
+# base0E = "#b26cff"
+# base0F = "#ff99cc"
+
+palette = "deep_oceanic_next"
+
+[palettes.deep_oceanic_next]
+black = "#001a1f"
+red = "#ec5f67"
+green = "#99c794"
+blue = "#4da6ff"
+yellow = "#fac863"
+purple = "#b26cff"
+cyan = "#5fb3b3"
+white = "#f8fbfb"
+
+bright-black = "#092128"
+bright-red = "#e27d7d"
+bright-green = "#afcea8"
+bright-blue = "#72b4f9"
+bright-yellow = "#f4d282"
+bright-purple = "#b88af8"
+bright-cyan = "#82bdbf"
+bright-white = "#f9fbfb"
+
+[os]
+disabled = true
+
+[username]
+show_always = true
+style_user = "bg:#f99157 bold fg:#001a1f"
+style_root = "bg:#f99157 bold fg:#001a1f"
+format = "[ 󰀄 $user ](bold fg:#001a1f bg:#ec5f67)"
+
+# Battery configuration
+[battery]
+format = "[ $symbol$percentage ](bold fg:#001a1f bg:#fac863)"
+
+[[battery.display]]
+threshold = 100
+
+[directory]
+truncation_symbol = "…/"
+truncation_length = 6
+format = "[ $path ](bold fg:#001a1f bg:#99c794)"
+
+[git_branch]
+symbol = ""
+format = "[ $symbol $branch ](bold fg:#001a1f bg:#5fb3b3)"
+
+[git_status]
+format = "[$all_status$ahead_behind ](bold fg:#001a1f bg:#5fb3b3)"
+
+[package]
+disabled = true
+
+[time]
+disabled = false
+time_format = "%r"
+style = "bg:#001a1f fg:white"
+format = "[ $time ](bold fg:#001a1f bg:#b26cff)"
+
+[cmd_duration]
+format = "[ $duration ](bold fg:#001a1f bg:#b26cff)"
+
+[fill]
+symbol = " "
+style = "bg:black fg:black"
+
+[character]
+error_symbol = "[✗](bold red)"
