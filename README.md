@@ -1,5 +1,5 @@
 <h3 align="center">
-	<img src="./big_wave.svg" width="100" alt="big_wave"/><br/>
+	<img src="https://raw.githubusercontent.com/spearkkk/deep-oceanic-next/93d6557c42fda451679225133acee3d62773dcfd/big_wave.svg" width="100" alt="big_wave"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 	<a href="https://github.com/spearkkk/deep-oceanic-next">Deep Oceanic Next</a> Color Theme for <a href="https://starship.rs">Starship</a>
 </h3>
