@@ -2,83 +2,93 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](fg:#0f1f26 bg:#013640)\
-[](fg:#013640 bg:#025060)\
-[](fg:#025060 bg:#036f8a)\
-[](fg:#036f8a bg:#001a1f)\
-[](fg:#001a1f bg:#ec5f67)\
+[](fg:#003b46 bg:#004f5e)\
+[](fg:#004f5e bg:#006374)\
+[](fg:#006374 bg:#007a8a)\
+[](fg:#007a8a bg:#0093a3)\
+[](fg:#0093a3 bg:#003b46)\
+[](fg:#003b46 bg:#e6454b)\
 $username\
-[](fg:#ec5f67 bg:#fac863)\
+[](fg:#e6454b bg:#ff6a4b)\
 $battery\
-[](fg:#fac863 bg:#99c794)\
+[](fg:#ff6a4b bg:#ffcc66)\
 $directory\
-[](fg:#99c794 bg:#5fb3b3)\
+[](fg:#ffcc66 bg:#85b57a)\
 $git_branch\
 $git_status\
-[](fg:#5fb3b3 bg:#b26cff)\
+[](fg:#85b57a bg:#4da6a6)\
 $cmd_duration\
-[](fg:#b26cff bg:#ff99cc)\
-[](fg:#ff99cc bg:#001a1f)\
+[](fg:#4da6a6 bg:#3a82e6)\
+[](fg:#3a82e6 bg:#8c4de6)\
+[](fg:#8c4de6)\
 $fill\
-[---](fg:#fac863 bg:#0f1f26)
+[---](fg:#ffcc66)
 $character\
 """
 
 right_format = """
-[󰇥](bold fg:#fac863 bg:#001a1f )
+[󰇥](bold fg:#ffcc66 )
 """
-
-# Deep Oceanic Next Colors
-# base00 = "#001a1f"
-# base01 = "#0f1f26"
-# base02 = "#013640"
-# base03 = "#025060"
-# base04 = "#036f8a"
-# base05 = "#e6ebf0"
-# base06 = "#f0f5f5"
-# base07 = "#f8fbfb"
-# base08 = "#ec5f67"
-# base09 = "#f99157"
-# base0A = "#fac863"
-# base0B = "#99c794"
-# base0C = "#5fb3b3"
-# base0D = "#4da6ff"
-# base0E = "#b26cff"
-# base0F = "#ff99cc"
+# scheme: "Deep Oceanic Next"
+# author: "spearkkk (https://github.com/spearkkk/deep-oceanic-next)"
+# base00: "003b46" # background
+# base01: "004f5e" # black
+# base02: "006374" # bright black
+# base03: "007a8a" # grey
+# base04: "0093a3" # light grey
+# base05: "dce3e8" # foreground
+# base06: "e6ebf0" # white
+# base07: "f0f5f5" # bright white
+# base08: "e6454b" # red
+# base09: "ff6a4b" # orange
+# base0A: "ffcc66" # yellow
+# base0B: "85b57a" # green
+# base0C: "4da6a6" # cyan/aqua
+# base0D: "3a82e6" # blue
+# base0E: "8c4de6" # magenta/purple
+# base0F: "e673a3" # pink
+# base10: "001114" # darker black
+# base11: "000a0d" # darkest black
+# base12: "ff5a61" # bright red
+# base13: "ffdd80" # bright yellow
+# base14: "99d8a0" # bright green
+# base15: "66cccc" # bright cyan
+# base16: "4da6ff" # bright blue
+# base17: "a366ff" # bright purple
 
 palette = "deep_oceanic_next"
 
 [palettes.deep_oceanic_next]
-black = "#001a1f"
-red = "#ec5f67"
-green = "#99c794"
-blue = "#4da6ff"
-yellow = "#fac863"
-purple = "#b26cff"
-cyan = "#5fb3b3"
-white = "#f0f5f5"
+black = "#003b46"
+red = "#e6454b"
+green = "#85b57a"
+blue = "#3a82e6"
+yellow = "#ffcc66"
+purple = "#8c4de6"
+cyan = "#4da6a6"
+white = "#dce3e8"
 
-bright-black = "#013640"
+bright-black = "#004f5e"
 bright-red = "#ff9999"
 bright-green = "#c7e6c7"
 bright-blue = "#99ccff"
 bright-yellow = "#ffb380"
 bright-purple = "#d4a1ff"
 bright-cyan = "#99e6e6"
-bright-white = "#f8fbfb"
+bright-white = "#e6ebf0"
 
 [os]
 disabled = true
 
 [username]
 show_always = true
-style_user = "bg:#f99157 bold fg:#001a1f"
-style_root = "bg:#f99157 bold fg:#001a1f"
-format = "[ 󰀄 $user ](bold fg:#001a1f bg:#ec5f67)"
+style_user = "bg:#f99157 bold fg:#003b46"
+style_root = "bg:#f99157 bold fg:#003b46"
+format = "[ 󰀄 $user ](bold fg:#003b46 bg:#e6454b)"
 
 # Battery configuration
 [battery]
-format = "[ $symbol$percentage ](bold fg:#001a1f bg:#fac863)"
+format = "[ $symbol$percentage ](bold fg:#003b46 bg:#ff6a4b)"
 
 [[battery.display]]
 threshold = 100
@@ -86,14 +96,14 @@ threshold = 100
 [directory]
 truncation_symbol = "…/"
 truncation_length = 6
-format = "[ $path ](bold fg:#001a1f bg:#99c794)"
+format = "[ $path ](bold fg:#003b46 bg:#ffcc66)"
 
 [git_branch]
 symbol = ""
-format = "[ $symbol $branch ](bold fg:#001a1f bg:#5fb3b3)"
+format = "[ $symbol $branch ](bold fg:#003b46 bg:#85b57a)"
 
 [git_status]
-format = "[$all_status$ahead_behind ](bold fg:#001a1f bg:#5fb3b3)"
+format = "[$all_status$ahead_behind ](bold fg:#003b46 bg:#85b57a)"
 
 [package]
 disabled = true
@@ -101,15 +111,14 @@ disabled = true
 [time]
 disabled = false
 time_format = "%r"
-style = "bg:#001a1f fg:white"
-format = "[ $time ](bold fg:#001a1f bg:#b26cff)"
+style = "bg:#003b46 fg:white"
+format = "[ $time ](bold fg:#003b46 bg:#b26cff)"
 
 [cmd_duration]
-format = "[ $duration ](bold fg:#001a1f bg:#b26cff)"
+format = "[ $duration ](bold fg:#003b46 bg:#4da6a6)"
 
 [fill]
 symbol = " "
-style = "bg:black fg:black"
 
 [character]
 error_symbol = "[✗](bold red)"
