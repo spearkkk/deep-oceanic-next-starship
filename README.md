@@ -8,9 +8,12 @@
 	<a href="https://github.com/spearkkk/starship-oceanic-next/contributors"><img src="https://img.shields.io/github/contributors/spearkkk/starship-oceanic-next?colorA=001a1f&colorB=5fb3b3&style=for-the-badge"></a>
 </p>
 
+<details>
+  <summary>Click to expand!</summary>
 ![deep-oceanic-next-starship_01.png](./deep-oceanic-next-starship_01.png)
 ![deep-oceanic-next-starship_02.png](./deep-oceanic-next-starship_02.png)
 ![deep-oceanic-next-starship_03.png](./deep-oceanic-next-starship_03.png)
+</details>
 
 you can immerse yourself in whatever context you’re working in. Don’t worry about anything else—just like that duck you see over there.  
 
