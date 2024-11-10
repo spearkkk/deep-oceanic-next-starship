@@ -12,26 +12,23 @@
 ![deep-oceanic-next-starship_02.png](./deep-oceanic-next-starship_02.png)
 ![deep-oceanic-next-starship_03.png](./deep-oceanic-next-starship_03.png)
 
-<h3 style="color: #004f5e">
-	What is for?
-</h3>
-you can immerse yourself in whatever context you’re working in. Don’t worry about anything else—just like that duck you see over there. 󰇥
+you can immerse yourself in whatever context you’re working in. Don’t worry about anything else—just like that duck you see over there.  
 
-### How to Get This Nice Theme to My Machine?
+
+**How to Get This Nice Theme to My Machine?**
 ```shell
    mkdir -p ~/.config && curl -o ~/.config/starship.toml \
    https://github.com/spearkkk/deep-oceanic-next-starship/blob/master/starship.toml
 ```
 Please back-up your `starship.toml` file before applying
 
-### Thanks 🫰🏼
+**Thanks 🫰🏼**
 
 The theme is heavily inspired by the following works:
 
 - [Oceanic Next Color Theme](https://github.com/voronianski/oceanic-next-color-scheme)
-- [Starship Gruvbox Rainbow](https://github.com/fang2hou/starship-gruvbox-rainbow)
 
-### License
+**License**
 
 [MIT](LICENSE)
 
