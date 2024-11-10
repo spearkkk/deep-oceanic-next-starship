@@ -10,11 +10,12 @@
 
 ![deep-oceanic-next-starship_01.png](./deep-oceanic-next-starship_01.png)
 ![deep-oceanic-next-starship_02.png](./deep-oceanic-next-starship_02.png)
+![deep-oceanic-next-starship_03.png](./deep-oceanic-next-starship_03.png)
 
-### No OS Symbol, No Language, Docker, Package Version
-I created this theme with simplicity. There are many os, language, docker, package things.  
-Feel free to customize this theme as you want.  
-Or just look the cute duck 󰇥
+<h3 style="color: #004f5e">
+	What is for?
+</h3>
+you can immerse yourself in whatever context you’re working in. Don’t worry about anything else—just like that duck you see over there. 󰇥
 
 ### How to Get This Nice Theme to My Machine?
 ```shell
