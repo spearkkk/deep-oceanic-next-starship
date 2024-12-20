@@ -5,13 +5,15 @@ add_newline = true
 
 format = """
 $directory\
-$cmd_duration\
 $git_branch\
 $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
+$cmd_duration\
 $fill\
+$kubernetes\
+$docker_context\
 $nodejs\
 $python\
 $rust\
@@ -22,13 +24,15 @@ $swift\
 $dart\
 $scala\
 $kotlin\
-$docker_context\
-$kubernetes\
+\n
+$fill\
+$time\
 $character\
+
 """
 
 right_format = """
-[󰇥](bold fg:yellow)
+[󰇥](bold fg:bright-yellow)
 """
 
 # Palette
@@ -64,22 +68,21 @@ bright-purple = "#b788ff" # Base17
 disabled = true
 
 [directory]
-truncation_length = 6
+truncation_length = 3
 truncate_to_repo = true
 style = "fg:bright-yellow bg:background"
-read_only = ""
-read_only_style = ""
+read_only_style = "bright-red"
 truncation_symbol = "…/"
-repo_root_style = "underline fg:yellow bg:background"
+repo_root_style = "underline fg:bright-yellow bg:background"
 
 [git_branch]
 symbol = ""
-format = "[\ngit: ](bold fg:light-grey bg:background)[$symbol $branch](underline bold fg:light-grey bg:background)"
-truncation_length = 10
+format = "[< ](fg:light-grey bg:background)[$symbol-$branch](fg:bright-green bg:background)[ >](fg:light-grey bg:background)"
+truncation_length = 50
 
 # Enhanced Git Status without clean indicator
 [git_status]
-format = "[$all_status$ahead_behind](fg:light-grey bg:background)"
+format = "[ $all_status$ahead_behind ](fg:bright-green bg:background)"
 staged = "●"  # Indicates staged files
 modified = "✚"  # Indicates modified files
 deleted = "✖"  # Indicates deleted files
@@ -94,13 +97,15 @@ diverged = "⇕"  # Indicates commits diverged from the remote
 disabled = true
 
 [time]
-disabled = true
+disabled = false
+format="[$time](fg:bright-yellow bg:background)"
+time_format="%a %Y.%m.%d %H:%M:%S %Z (%s)"
 
 [cmd_duration]
-format = "[$duration](fg:bright-black bg:background)"
+format = "[$duration](fg:magenta bg:background)"
 
 [fill]
-symbol = " "
+symbol = "-"
 
 [character]
 format = "\n$symbol "
@@ -109,48 +114,48 @@ error_symbol = "[✗](bold red)"
 
 # Docker Module with Underlined Context Only
 [docker_context]
-format = "[\ndck: ](bold fg:grey bg:background)[$context](underline bold fg:grey bg:background)"
+format = "[  ](bg:background)[$context](underline fg:bright-blue bg:background)"
 disabled = false
 
 # Kubernetes Module with Underlined Context Only
 [kubernetes]
-format = "[\nk8s: ](bold fg:cyan bg:background)[$context](underline bold fg:cyan bg:background)"
+format = "[  ](background)[$context](underline fg:bright-cyan bg:background)"
 disabled = false
 
 # Language Modules with Underlined Versions Only
 [nodejs]
-format = "[ node: ](bold fg:grey bg:background)[$version](bold fg:grey bg:background underline)"
+format = "[  node: ](fg:bright-purple bg:background)[$version](fg:bright-purple bg:background underline)"
 disabled = false
 
 [python]
-format = "[ python: ](bold fg:grey bg:background)[$version](bold fg:grey bg:background underline)"
+format = "[  python: ](fg:bright-purple bg:background)[$version](fg:bright-purple bg:background underline)"
 disabled = false
 
 [rust]
-format = "[ rust: ](bold fg:grey bg:background)[$version](bold fg:grey bg:background underline)"
+format = "[  rust: ](fg:bright-purple bg:background)[$version](fg:bright-purple bg:background underline)"
 disabled = false
 
 [java]
-format = "[ java: ](bold fg:grey bg:background)[$version](bold fg:grey bg:background underline)"
+format = "[  java: ](fg:bright-purple bg:background)[$version](fg:bright-purple bg:background underline)"
 disabled = false
 
 [swift]
-format = "[ swift: ](bold fg:grey bg:background)[$version](bold fg:grey bg:background underline)"
+format = "[  swift: ](fg:bright-purple bg:background)[$version](fg:bright-purple bg:background underline)"
 disabled = false
 
 [dart]
-format = "[ dart: ](bold fg:grey bg:background)[$version](bold fg:grey bg:background underline)"
+format = "[  dart: ](fg:bright-purple bg:background)[$version](fg:bright-purple bg:background underline)"
 disabled = false
 
 [ruby]
-format = "[ ruby: ](bold fg:grey bg:background)[$version](bold fg:grey bg:background underline)"
+format = "[  ruby: ](fg:bright-purple bg:background)[$version](fg:bright-purple bg:background underline)"
 disabled = false
 
 [scala]
-format = "[ scala: ](bold fg:grey bg:background)[$version](bold fg:grey bg:background underline)"
+format = "[  scala: ](fg:bright-purple bg:background)[$version](fg:bright-purple bg:background underline)"
 disabled = false
 
 [kotlin]
-format = "[ kotlin: ](bold fg:grey bg:background)[$version](bold fg:grey bg:background underline)"
+format = "[  kotlin: ](fg:bright-purple bg:background)[$version](fg:bright-purple bg:background underline)"
 disabled = false
 
